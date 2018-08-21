@@ -231,6 +231,10 @@ prevents you from such errors.
 [openproject@host] RAILS_ENV="production" ./bin/rake db:migrate
 [openproject@host] RAILS_ENV="production" ./bin/rake db:seed
 [openproject@host] RAILS_ENV="production" ./bin/rake assets:precompile
+
+#####YAMAN
+#bundler exec rake db:seed
+#autoprefixer was upgraded to v9.1.2
 ```
 
 **NOTE:** When not specified differently, the default data loaded via db:seed will have an english localization. You can choose to seed in a different language by specifying the language via the `LOCALE` environment variable on the call to `db:seed`. E.g.
