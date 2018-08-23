@@ -127,7 +127,7 @@ time to finsih.
 [openproject@host] source ~/.profile
 [openproject@host] git clone git://github.com/OiNutter/node-build.git ~/.nodenv/plugins/node-build
 
-[openproject@host] nodenv install 6.9.1
+[openproject@host] nodenv install 6.9.1 ##TO 10.8.0
 [openproject@host] nodenv rehash
 [openproject@host] nodenv global 6.9.1
 ```
@@ -298,7 +298,7 @@ But before copy&pasting the following lines, check if the content (especially th
 
 
 ```apache
-LoadModule passenger_module /home/openproject/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/passenger-5.0.14/buildout/apache2/mod_passenger.so
+LoadModule passengecdr_module /home/openproject/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/passenger-5.0.14/buildout/apache2/mod_passenger.so
 ```
 
 Then create the file /etc/apache2/mods-available/passenger.conf with the following contents (again, take care of the version numbers!):
