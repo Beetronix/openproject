@@ -296,9 +296,9 @@ To do this, continue as the root user:
 As told by the installer, create the file /etc/apache2/mods-available/passenger.load and add the following line.
 But before copy&pasting the following lines, check if the content (especially the version numbers!) is the same as the passenger-install-apache2-module installer said. When you're in doubt, do what passenger tells you.
 
-
+## Yaman: Exactly like apache2 says:
 ```apache
-LoadModule passengecdr_module /home/openproject/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/passenger-5.0.14/buildout/apache2/mod_passenger.so
+LoadModule passenger_module /home/openproject/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/passenger-5.0.14/buildout/apache2/mod_passenger.so
 ```
 
 Then create the file /etc/apache2/mods-available/passenger.conf with the following contents (again, take care of the version numbers!):
