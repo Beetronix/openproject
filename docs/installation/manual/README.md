@@ -234,7 +234,7 @@ prevents you from such errors.
 
 #####YAMAN
 #bundler exec rake db:seed
-#autoprefixer was upgraded to v9.1.2
+#autoprefixer was upgraded to v9.1.2 , (frontend/package.json), then npm i
 ```
 
 **NOTE:** When not specified differently, the default data loaded via db:seed will have an english localization. You can choose to seed in a different language by specifying the language via the `LOCALE` environment variable on the call to `db:seed`. E.g.
@@ -354,6 +354,7 @@ Now, we (re-)start Apache:
 ```bash
 [root@host] service apache2 restart
 ```
+##YAMAN setup a scret key in config/secrets.yml
 
 Your OpenProject installation should be accessible on port 80 (http). A default admin-account is created for you having the following credentials:
 
